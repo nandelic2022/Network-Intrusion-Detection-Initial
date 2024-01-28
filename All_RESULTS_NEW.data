@@ -1,0 +1,215 @@
+##########################################
+# Results form initial investigation of NID 
+# for Information - MDPI special issue 
+##############################################
+# The results are presented that are obtained on 
+# the following balanced dataset varitions 
+################################################
+# 1. ADASYN
+# 2. BorderlineSMOTE
+# 3. KMeansSMOTE
+# 4. SMOTE
+# 5. SVMSMOTE 
+##################################################
+# For each balanced dataset variations the best SES 
+# are shown in the following way 
+####################################################
+# 1. Hyperparameters 
+# 2. Clean Symbolic Expressions 
+# 3. Length and Depth
+# 4. Scores 
+####################################################
+# ADASYN DATASET k = 0 case 1 
+#####################################################
+# Hyperparmaters 
+###################
+1307, 231, 133, (6, 12), 0.002000322110674084, 0.9832223162889494, 0.01242605191812544, 0.0017928478775460707, 0.000123, 0.9959593625797378, (-420.95114031259186, 745.1765557236832), 5.6295907589758063e-05
+
+
+###################
+# Clean Symbolic Expressions 
+###################
+['np.subtract(np.multiply(log2(np.multiply(X21, np.add(X1, max(max(X1, X42), div(X3, 723.981))))), min(div(np.cos(log(np.cos(log10(np.sin(CubeRoot(X3)))))), X40), sqrt(min(np.subtract(log2(X3), X33), min(CubeRoot(min(max(X8, X25), log10(log10(np.add(X3, np.cos(CubeRoot(X28))))))), div(np.add(np.tan(np.cos(np.subtract(np.tan(X32), np.add(X8, np.tan(X40))))), log2(X41)), np.subtract(np.cos(log(min(np.cos(np.abs(np.sin(X38))), np.cos(X1)))), np.multiply(X4, X13)))))))), log2(np.subtract(log(np.subtract(np.multiply(X4, np.subtract(np.multiply(X31, X30), X3)), np.multiply(np.subtract(div(div(X13, X42), max(X34, np.abs(X36))), np.cos(np.cos(X36))), CubeRoot(X30)))), CubeRoot(log2(np.tan(X1))))))'],
+['np.add(np.tan(np.cos(log10(X4))), log(max(np.add(np.add(np.subtract(sqrt(np.abs(log2(max(np.subtract(min(X33, X25), log10(log2(X24))), X39)))), np.tan(np.subtract(log2(np.sin(CubeRoot(log10(min(np.abs(np.multiply(log(X41), max(X3, log10(X1)))), np.sin(np.cos(X6))))))), np.tan(X37)))), max(np.multiply(CubeRoot(X25), log2(np.add(X4, X21))), np.tan(np.subtract(np.subtract(max(X38, X11), div(log(X32), X39)), np.cos(min(X8, CubeRoot(np.abs(X4)))))))), np.subtract(CubeRoot(np.subtract(log10(max(log(log(np.abs(np.sin(np.add(X1, np.cos(np.sin(np.subtract(log2(X4), X15)))))))), np.multiply(X35, np.tan(np.tan(X34))))), np.tan(div(log10(log2(X36)), log10(div(X35, X31)))))), np.abs(div(X28, np.abs(X40))))), X35)))'],
+['np.subtract(np.abs(sqrt(np.multiply(div(max(sqrt(X40), X6), max(log(log(sqrt(X3))), log2(X40))), np.multiply(div(np.add(np.add(div(X21, X41), np.tan(np.tan(X3))), np.add(X27, np.tan(X41))), log(np.sin(X33))), X21)))), sqrt(log2(np.abs(np.abs(max(np.tan(X20), np.multiply(np.multiply(div(X29, np.multiply(np.add(X33, sqrt(log2(X28))), X38)), div(X30, np.add(np.cos(sqrt(sqrt(log10(sqrt(X36))))), np.subtract(np.subtract(log(X40), max(X23, sqrt(X34))), np.multiply(588.393, X8))))), max(max(np.multiply(np.multiply(X3, div(np.subtract(X12, X25), X14)), max(div(log2(log2(log10(np.abs(np.sin(np.cos(log10(X3))))))), np.subtract(X4, X32)), X4)), div(min(X4, X13), X42)), np.tan(np.tan(X2))))))))))'],
+['np.subtract(np.add(max(X34, X6), np.subtract(div(X22, X3), log10(np.abs(X31)))), np.multiply(np.tan(np.subtract(np.abs(X42), np.cos(np.subtract(np.add(CubeRoot(np.sin(min(np.tan(np.cos(log2(log(np.sin(min(np.cos(np.subtract(X42, max(X33, np.cos(np.multiply(sqrt(max(X20, div(X12, X4))), log10(np.add(CubeRoot(X4), np.subtract(X1, X0)))))))), max(np.abs(X20), max(np.add(log2(log10(log(np.cos(min(max(X16, div(X4, X33)), max(X35, X15)))))), X42), np.sin(X2))))))))), np.tan(np.multiply(X34, X25))))), np.add(div(log10(X38), sqrt(X8)), np.subtract(np.sin(log(CubeRoot(max(X36, np.cos(np.cos(X1)))))), X27))), min(sqrt(np.subtract(np.sin(X1), np.add(X26, np.sin(div(np.subtract(X11, np.abs(X34)), np.sin(np.sin(X10))))))), div(log(np.add(X27, np.tan(X36))), X40)))))), np.add(sqrt(np.multiply(X21, div(np.subtract(X40, X28), X3))), np.add(div(np.abs(sqrt(X22)), max(np.multiply(X8, X21), np.add(CubeRoot(X4), CubeRoot(X30)))), min(max(max(X42, np.tan(X6)), CubeRoot(X38)), div(np.tan(div(np.cos(log2(log(X27))), log(X0))), log2(sqrt(np.cos(X10)))))))))'], 
+['np.subtract(np.add(np.add(max(np.subtract(np.add(X33, X33), np.tan(X10)), np.abs(np.add(max(np.subtract(X6, log(np.multiply(max(X27, X12), max(log10(CubeRoot(np.add(X11, log10(sqrt(X36))))), X25)))), CubeRoot(X36)), np.tan(X34)))), max(div(np.subtract(np.tan(X34), np.add(X4, CubeRoot(np.subtract(np.multiply(np.tan(X34), np.multiply(min(-394.383, log(-188.825)), min(X42, np.sin(X1)))), np.add(X35, X0))))), div(np.multiply(X32, X35), X8)), np.cos(np.add(log10(X3), np.tan(min(X27, np.cos(X10))))))), max(div(np.subtract(np.add(np.add(X40, max(div(np.subtract(log(X22), np.add(X4, np.subtract(np.tan(sqrt(np.cos(np.abs(X1)))), np.subtract(np.subtract(max(div(X37, X35), np.add(X4, np.multiply(X25, X2))), np.multiply(538.091, log(X41))), log2(log(np.subtract(X35, X4))))))), np.cos(X36)), np.subtract(np.abs(X33), X27))), max(log2(X15), np.sin(X1))), np.add(log10(X31), log(log2(np.subtract(np.cos(np.sin(X28)), sqrt(X3)))))), div(min(log(log2(np.sin(X11))), log10(max(X9, X26))), X8)), log2(sqrt(np.sin(X1))))), np.add(div(np.tan(X1), np.add(-83.028, CubeRoot(np.multiply(X31, X21)))), log(log2(X3))))']
+
+####################
+# Depth and Length 
+####################
+['14', '18', '19', '26', '17']
+['99', '103', '104', '157', '160']
+
+
+####################
+# Scores 
+####################
+MEAN_ACC = 0.9683894434372764
+ STD_ACC = 0.0011364556379719337
+ MEAN_ROC_AUC = 0.9683817011001166
+ STD_ROC_AUC = 0.0011400990034372005
+ MEAN_PRECISION = 0.9764340758870617
+ STD_PRECISION = 0.0009464040866383749
+ MEAN_RECALL = 0.9603413522663207
+ STD_RECALL = 0.00124756152166694
+ MEAN_F1_SCORE = 0.9680524176390648
+ STD_F1_SCORE = 0.0011043328205528335
+
+
+####################################################
+# BorderlineSMOTE DATASET k = 0 case 2 
+#####################################################
+# Hyperparmaters 
+###################
+1285, 293, 333, (6, 18), 0.008240541877036659, 0.9652291726212089, 0.015681499583576414, 0.010212038073988308, 0.000784, 0.9983883348978717, (-155.23032648305377, 315.1954465774251), 7.043305071550751e-05
+
+
+###################
+# Clean Symbolic Expressions 
+###################
+['CubeRoot(div(np.add(np.add(np.subtract(X22, np.tan(X32)), log10(np.multiply(np.multiply(np.subtract(X10, X42), np.subtract(np.sin(sqrt(np.tan(log10(np.add(sqrt(sqrt(np.add(X14, X18))), np.add(np.abs(log2(X34)), CubeRoot(log10(X40)))))))), np.subtract(X7, X4))), max(X3, X37)))), np.subtract(div(X39, min(sqrt(np.subtract(X25, log(X24))), div(np.cos(X33), X21))), np.tan(X41))), np.sin(log10(np.tan(np.subtract(np.tan(min(np.add(CubeRoot(np.sin(X8)), div(np.tan(X41), log10(np.multiply(-39.686, X2)))), div(np.subtract(div(np.subtract(X6, sqrt(X3)), div(X17, X41)), np.cos(X42)), X40))), np.multiply(log10(np.sin(np.sin(236.545))), log(div(X4, X42)))))))))'], 
+['log2(np.multiply(div(log(np.add(log10(np.sin(max(np.tan(X33), np.cos(log(np.cos(max(div(sqrt(log(log2(X38))), X40), CubeRoot(X8)))))))), np.tan(np.sin(np.cos(CubeRoot(X8)))))), log(log2(div(div(div(sqrt(X20), X1), X25), np.multiply(sqrt(X4), np.tan(div(X36, X14))))))), sqrt(max(np.multiply(sqrt(np.subtract(np.subtract(div(np.sin(X1), X39), np.add(np.multiply(X4, np.subtract(X25, np.add(X9, X41))), X21)), log10(log10(np.sin(CubeRoot(np.tan(123.190))))))), np.tan(np.subtract(np.tan(np.cos(np.add(log10(CubeRoot(X3)), X10))), np.tan(log2(X39))))), np.subtract(max(np.tan(log10(log10(np.multiply(np.add(np.subtract(X34, div(np.sin(np.abs(X14)), X35)), np.cos(np.cos(np.add(X38, np.add(X42, log2(X28)))))), np.cos(np.sin(np.abs(189.639))))))), X8), log(np.cos(np.add(min(X38, X33), 289.412))))))))'],
+['np.cos(np.add(X8, log2(max(div(log10(np.sin(np.sin(X40))), np.subtract(log10(X21), np.add(X33, X26))), np.add(log2(X4), np.cos(np.add(log10(X4), log2(max(log10(max(log10(X31), CubeRoot(np.add(np.add(np.tan(X24), X2), np.tan(183.517))))), np.cos(log2(max(log10(X0), max(sqrt(X4), np.cos(log2(max(log10(max(log10(X31), CubeRoot(np.add(X2, log(X3))))), np.sin(X1)))))))))))))))))'],
+['np.subtract(max(np.add(np.subtract(max(np.add(np.tan(X34), np.add(np.subtract(max(np.add(np.tan(X34), np.add(np.cos(np.subtract(log10(X31), np.add(X3, X36))), np.subtract(X40, np.subtract(X42, X24)))), np.subtract(div(np.subtract(69.276, X18), np.abs(log2(X41))), np.cos(np.tan(X1)))), np.sin(X2)), np.subtract(log2(np.multiply(X21, X36)), sqrt(min(np.sin(np.add(np.cos(X34), X3)), log(max(X27, X37))))))), np.abs(np.subtract(np.subtract(np.tan(X33), np.multiply(X6, X1)), log(div(X3, X8))))), log10(log2(np.subtract(log10(np.cos(log(sqrt(max(np.tan(X42), np.cos(X32)))))), X3)))), np.add(np.sin(X1), np.subtract(log2(np.multiply(X21, np.multiply(X2, X25))), sqrt(min(X29, log(np.add(log(X0), np.abs(np.tan(np.tan(X1)))))))))), log(log10(np.tan(np.sin(div(X41, X0)))))), min(min(sqrt(np.subtract(X2, np.subtract(np.multiply(X42, X3), log(X31)))), X3), np.add(X4, X41)))'],
+['np.add(np.subtract(np.subtract(np.subtract(np.tan(np.tan(min(np.abs(np.tan(X2)), X37))), max(X28, sqrt(log2(X4)))), np.subtract(log2(np.multiply(np.multiply(X41, np.tan(np.cos(sqrt(log2(np.subtract(log2(np.abs(X0)), np.subtract(log2(X4), max(X4, min(X28, X39))))))))), np.tan(np.cos(np.add(log2(log10(X8)), np.add(X23, X37)))))), np.add(CubeRoot(np.sin(X1)), X34))), np.subtract(log2(np.multiply(np.multiply(X41, np.tan(np.cos(X34))), np.tan(np.cos(X1)))), sqrt(np.subtract(X8, np.multiply(X30, X6))))), log(div(np.multiply(np.multiply(np.tan(np.add(X8, np.tan(X33))), np.multiply(sqrt(X1), X21)), max(max(np.add(np.cos(log10(div(X3, X34))), np.add(log(X33), div(X22, X40))), log2(np.multiply(308.991, X25))), np.tan(X12))), np.add(X38, X12))))']
+
+####################
+# Depth and Length 
+####################
+['16', '16', '21', '14', '15']
+['92', '114', '59', '124', '104']
+
+
+####################
+# Scores 
+####################
+MEAN_ACC = 0.9699653565564134
+ STD_ACC = 0.0005038645883675974
+ MEAN_ROC_AUC = 0.9699327316786206
+ STD_ROC_AUC = 0.000514518192047897
+ MEAN_PRECISION = 0.9637459140978021
+ STD_PRECISION = 8.282987477903347e-05
+ MEAN_RECALL = 0.9769324990219621
+ STD_RECALL = 0.0011038946553802442
+ MEAN_F1_SCORE = 0.9702488738924309
+ STD_F1_SCORE = 0.0005831910589416123
+
+
+
+
+####################################################
+# KMeansSMOTE DATASET k = 0 case 2 
+#####################################################
+# Hyperparmaters 
+###################
+1134, 202, 280, (6, 17), 0.005585776601561461, 0.956912262123673, 0.007482113717654748, 0.029609954793922477, 0.000677, 0.995100824620965, (-735.9169927103655, 492.4891197265922), 1.7998582726361996e-05
+
+
+###################
+# Clean Symbolic Expressions 
+###################
+['np.add(max(CubeRoot(log2(np.tan(np.subtract(X11, X34)))), max(min(np.add(X21, log(div(np.subtract(max(log(np.tan(np.add(X7, X31))), X30), max(X26, X4)), log2(X1)))), np.subtract(min(np.add(X21, log(div(np.subtract(max(CubeRoot(X30), X30), max(CubeRoot(X35), X4)), max(X31, X13)))), np.subtract(np.multiply(np.subtract(np.multiply(X6, max(np.abs(X10), X30)), X2), np.subtract(max(sqrt(X3), np.sin(X4)), log10(np.subtract(max(np.sin(X15), max(div(273.939, np.abs(X31)), max(np.abs(np.subtract(sqrt(np.abs(X31)), X1)), min(X21, X18)))), log(X30))))), min(np.subtract(X12, X34), CubeRoot(div(-352.950, X28))))), min(np.abs(X32), X41))), log2(X34))), np.add(sqrt(np.subtract(div(CubeRoot(X3), log2(log10(log2(log2(log10(log10(np.cos(X8)))))))), sqrt(CubeRoot(sqrt(sqrt(div(CubeRoot(X28), X40))))))), np.subtract(np.add(np.tan(X40), np.sin(X1)), log10(np.abs(np.add(np.add(max(X30, X42), np.subtract(X41, X23)), X4))))))'],
+['np.tan(np.subtract(div(max(np.abs(CubeRoot(log2(sqrt(log(CubeRoot(log(min(np.cos(X29), -726.925)))))))), np.sin(np.multiply(np.tan(np.subtract(X24, np.tan(np.multiply(log(np.abs(X41)), np.abs(np.sin(X42)))))), sqrt(np.multiply(sqrt(sqrt(np.cos(X7))), np.sin(log10(X21))))))), CubeRoot(np.multiply(np.cos(np.sin(sqrt(np.sin(X26)))), div(np.tan(np.add(min(np.sin(log2(log10(np.sin(log2(np.subtract(CubeRoot(log(max(np.multiply(np.cos(np.sin(X24)), sqrt(np.abs(X4))), np.subtract(sqrt(X40), np.tan(np.add(X28, X14)))))), np.tan(X14))))))), div(np.sin(237.486), CubeRoot(np.add(sqrt(X0), max(X21, max(X22, X23)))))), np.sin(log10(np.sin(sqrt(X23)))))), np.subtract(np.tan(CubeRoot(max(min(CubeRoot(log(X36)), np.tan(X1)), log10(np.multiply(np.add(X13, X38), np.abs(X34)))))), max(np.add(max(X6, X40), X6), np.abs(np.abs(div(CubeRoot(div(X13, X32)), np.sin(X4)))))))))), np.abs(np.subtract(np.abs(CubeRoot(np.subtract(np.subtract(log10(div(np.abs(np.add(np.sin(X27), np.cos(np.tan(np.add(X2, max(X1, X35)))))), X4)), log(np.subtract(X4, X34))), min(np.tan(CubeRoot(div(np.cos(X41), np.tan(X14)))), np.sin(log10(X4)))))), min(log2(np.add(np.abs(X11), div(np.cos(X11), min(X14, min(np.subtract(X4, X34), np.subtract(np.multiply(np.add(X2, X15), X0), np.add(max(X40, X8), np.sin(np.add(X26, log10(X8)))))))))), np.tan(X37))))))'], 
+['log2(np.abs(log2(np.add(log(np.sin(log10(log2(log(np.subtract(X3, np.cos(sqrt(X35)))))))), log(np.sin(max(np.tan(205.189), np.subtract(max(sqrt(CubeRoot(X3)), np.add(np.tan(X32), np.abs(max(sqrt(np.subtract(np.add(div(np.tan(div(X26, sqrt(log2(log2(X21))))), np.add(log10(np.tan(X4)), sqrt(X42))), min(log(np.add(np.subtract(np.add(X33, CubeRoot(np.tan(np.cos(X17)))), CubeRoot(max(np.tan(div(X11, X37)), log(np.abs(np.tan(X37)))))), np.add(X8, X3))), CubeRoot(np.cos(np.cos(np.tan(X3)))))), min(div(np.subtract(np.subtract(min(X35, np.cos(CubeRoot(np.multiply(X5, np.sin(X3))))), CubeRoot(X14)), max(np.subtract(X8, X34), max(min(X4, X27), X14))), np.sin(log2(-473.546))), np.sin(log(np.add(np.tan(X2), np.add(log10(np.sin(CubeRoot(X33))), sqrt(np.sin(np.add(max(log(np.sin(X32)), np.multiply(np.abs(X29), np.add(X36, X32))), div(np.multiply(div(X25, -704.821), np.multiply(X18, X29)), np.tan(X0)))))))))))), X6)))), max(X4, X33)))))))))'],
+['np.subtract(log2(np.add(np.multiply(log2(np.cos(X40)), log2(div(np.subtract(np.multiply(X2, np.cos(X1)), np.add(X3, log(log10(log2(min(X31, X0)))))), X1))), np.subtract(np.abs(div(CubeRoot(X30), log(X8))), log(sqrt(log10(np.multiply(log2(np.sin(X33)), X3))))))), np.subtract(log2(np.subtract(div(np.multiply(CubeRoot(log2(X4)), max(sqrt(X31), np.add(np.subtract(X34, log2(X11)), X22))), np.add(X12, div(div(X10, X3), CubeRoot(X8)))), np.subtract(np.subtract(X28, log10(div(np.abs(np.tan(np.add(np.add(X24, X20), X35))), np.cos(X10)))), log10(np.add(min(div(np.sin(X39), np.add(np.tan(np.tan(X2)), X31)), np.subtract(np.cos(log2(np.abs(np.multiply(div(X20, np.cos(log10(X8))), div(X8, X2))))), X6)), log10(CubeRoot(X21))))))), np.subtract(np.subtract(X6, min(np.sin(X26), np.tan(CubeRoot(np.tan(X1))))), log(min(log2(np.add(X30, np.tan(log(X2)))), max(log2(X3), div(X31, X30)))))))'],
+['np.add(log2(np.add(np.cos(log2(sqrt(log(min(np.subtract(X38, X11), X16))))), np.add(np.subtract(sqrt(np.sin(np.multiply(np.cos(np.tan(X29)), np.add(np.subtract(X37, sqrt(min(np.subtract(max(X42, X25), np.sin(X15)), np.add(X37, X38)))), min(X13, np.add(np.add(np.subtract(X11, X34), log(log(X4))), log(np.multiply(min(X8, log(min(np.cos(X8), X35))), np.cos(np.sin(np.subtract(max(X5, X34), X37))))))))))), np.multiply(X40, X22)), log10(np.tan(log10(np.sin(np.tan(CubeRoot(log10(np.subtract(X20, log(np.abs(np.add(log2(np.abs(X4)), CubeRoot(X4))))))))))))))), CubeRoot(div(np.subtract(min(log(X6), np.subtract(np.multiply(np.cos(np.subtract(log2(X24), log10(X4))), div(np.add(log(X3), np.subtract(X2, sqrt(log(div(X11, X33))))), min(np.subtract(X10, X33), div(X39, X25)))), sqrt(X3))), np.abs(X31)), np.multiply(np.multiply(np.multiply(max(np.cos(np.cos(log(X36))), np.tan(np.tan(X34))), np.subtract(X27, np.multiply(np.add(div(X4, X35), X1), X8))), np.add(np.add(np.abs(min(np.sin(X1), log10(X4))), np.abs(np.add(X41, np.sin(X28)))), min(np.sin(log(X5)), np.cos(X6)))), CubeRoot(np.add(np.subtract(div(X8, div(X33, div(np.cos(X1), X36))), sqrt(log10(np.multiply(X1, max(CubeRoot(X28), X15))))), log2(log(X3))))))))']
+
+####################
+# Depth and Length 
+####################
+['18', '21', '25', '16', '17']
+['136', '188', '137', '129', '177']
+
+
+####################
+# Scores 
+####################
+MEAN_ACC = 0.9772294109610743
+ STD_ACC = 0.0004119019956312364
+ MEAN_ROC_AUC = 0.9772066726719529
+ STD_ROC_AUC = 0.00038647754438370097
+ MEAN_PRECISION = 0.9777247668602643
+ STD_PRECISION = 0.000663378055600572
+ MEAN_RECALL = 0.9769024846636283
+ STD_RECALL = 0.00042188043088153826
+ MEAN_F1_SCORE = 0.9773060039272953
+ STD_F1_SCORE = 0.0005416756323399774
+
+####################################################
+# SMOTE DATASET k = 0 case 1 
+#####################################################
+# Hyperparmaters 
+###################
+1004, 248, 261, (3, 16), 0.017563990089847492, 0.9575941244599042, 0.0077938084630008436, 0.016493737802055066, 6.6e-05, 0.9936538599401326, (-811.0253240091835, 176.5135955006918), 6.519458643179032e-05
+
+
+###################
+# Clean Symbolic Expressions 
+###################
+['CubeRoot(np.subtract(np.subtract(np.add(max(np.multiply(div(max(np.tan(X32), np.abs(div(np.subtract(X22, X12), X3))), max(np.tan(-358.064), X32)), np.abs(max(np.multiply(div(max(np.add(np.tan(X34), sqrt(X34)), np.abs(div(np.tan(sqrt(log(np.abs(np.subtract(log(max(sqrt(np.abs(CubeRoot(X41))), log2(np.add(np.subtract(X38, X23), np.add(X11, X3))))), X1))))), X3))), max(np.multiply(X4, X31), CubeRoot(np.sin(X3)))), np.abs(np.subtract(log(div(X25, X2)), X21))), X38))), np.multiply(np.subtract(X4, -754.994), X6)), min(X1, log(np.multiply(sqrt(np.tan(np.tan(np.abs(X3)))), div(np.multiply(X26, -356.468), X38))))), max(np.subtract(div(np.subtract(np.add(np.add(X0, np.multiply(X3, X37)), log2(X22)), sqrt(X31)), np.subtract(np.subtract(np.tan(X36), X33), np.add(np.sin(X36), X34))), X3), np.tan(min(min(np.tan(np.add(np.sin(np.sin(np.sin(np.abs(CubeRoot(np.sin(np.sin(np.tan(np.abs(log10(log2(np.cos(CubeRoot(X8))))))))))))), np.cos(min(X32, X40)))), log10(X3)), max(np.abs(np.tan(X39)), max(X4, max(log2(X14), np.subtract(np.subtract(X21, X32), log2(X34))))))))), log2(CubeRoot(np.abs(X30)))))'],
+['np.add(log2(CubeRoot(np.add(np.multiply(X3, max(X40, CubeRoot(X8))), np.add(np.sin(X1), np.subtract(X42, min(X0, np.sin(np.cos(X11)))))))), np.add(np.add(CubeRoot(np.sin(max(log(X3), X4))), np.cos(np.subtract(CubeRoot(np.tan(X32)), X3))), np.subtract(np.multiply(max(np.subtract(np.add(X37, X6), X10), np.subtract(X33, np.sin(X23))), max(np.tan(max(np.tan(X38), sqrt(np.tan(X1)))), X21)), log2(log2(div(np.add(np.subtract(min(log(X36), np.sin(X1)), X3), np.multiply(X4, X3)), max(log10(X4), np.add(np.add(X33, max(X26, X33)), np.subtract(CubeRoot(np.sin(X16)), X42)))))))))'],
+['np.subtract(log2(np.multiply(X21, X28)), np.add(CubeRoot(np.subtract(np.add(np.subtract(np.add(div(X26, np.tan(np.add(np.add(X33, X8), X1))), np.tan(min(log10(X30), CubeRoot(np.add(np.tan(np.add(np.sin(np.tan(np.subtract(np.add(np.sin(CubeRoot(np.subtract(log2(X3), div(log2(X2), sqrt(div(log2(max(log(log10(X3)), np.abs(X4))), max(np.abs(X10), X23))))))), np.tan(min(np.cos(X6), CubeRoot(log(log10(np.tan(np.abs(X8)))))))), X35))), log10(np.cos(X34)))), np.tan(np.subtract(sqrt(X10), CubeRoot(log(log10(np.tan(max(np.tan(CubeRoot(X24)), X8)))))))))))), np.multiply(X22, max(X40, X36))), np.tan(min(log2(X21), CubeRoot(np.add(np.tan(np.add(np.sin(np.tan(np.subtract(np.add(np.sin(CubeRoot(np.subtract(log2(X3), np.add(div(np.add(X23, X1), np.abs(X6)), np.tan(X38))))), np.tan(min(np.tan(X39), CubeRoot(log(log10(np.tan(X8))))))), log2(log(log2(np.tan(np.add(X5, X20)))))))), log10(np.cos(np.cos(X32))))), np.tan(np.subtract(X32, CubeRoot(log(log10(np.tan(X8))))))))))), log2(div(X33, CubeRoot(np.add(X4, div(X14, X42))))))), log10(max(div(log2(sqrt(log10(X33))), X37), np.multiply(X4, X22)))))'],
+['np.subtract(log2(np.abs(max(np.tan(CubeRoot(X40)), np.multiply(log2(div(sqrt(sqrt(min(log2(X31), max(X2, log2(log10(np.sin(X1))))))), max(np.tan(CubeRoot(CubeRoot(X8))), X27))), max(X6, max(div(sqrt(X4), X4), np.multiply(max(X22, np.multiply(X29, X31)), X40))))))), log2(sqrt(np.add(np.subtract(max(np.multiply(log2(div(log10(X34), min(np.cos(np.multiply(np.subtract(log2(X35), X1), X40)), X35))), np.abs(X3)), max(np.add(np.tan(X39), np.subtract(X10, X39)), np.subtract(log2(X3), np.abs(np.multiply(np.subtract(X6, max(X35, np.sin(X8))), max(X3, -397.077)))))), np.subtract(np.cos(np.add(np.subtract(log(max(np.cos(sqrt(X32)), log(max(X33, np.multiply(np.subtract(X0, X2), X4))))), X26), X32)), np.sin(np.tan(X37)))), X42))))'],
+['np.subtract(np.multiply(max(max(np.subtract(log2(CubeRoot(X8)), np.sin(np.subtract(X18, np.tan(np.add(X37, X11))))), log2(X6)), max(max(np.tan(X33), np.tan(X6)), np.multiply(X40, div(X2, X30)))), X21), log10(np.multiply(np.multiply(X3, max(np.multiply(div(X35, X8), X31), np.add(X0, np.tan(-211.885)))), np.multiply(np.subtract(np.multiply(np.subtract(X28, np.multiply(X33, np.subtract(X26, X41))), np.subtract(X18, np.multiply(np.subtract(X34, np.add(X12, X21)), np.cos(log10(X29))))), CubeRoot(min(X4, np.multiply(div(X35, X8), X31)))), X3))))']
+
+####################
+# Depth and Length 
+####################
+['23', '11', '27', '15', '10']
+['155', '83', '158', '106', '73']
+
+
+####################
+# Scores 
+####################
+MEAN_ACC = 0.9830570479112167
+ STD_ACC = 0.0007969010319256453
+ MEAN_ROC_AUC = 0.9831024218505993
+ STD_ROC_AUC = 0.0007306053572036508
+ MEAN_PRECISION = 0.9833484991935326
+ STD_PRECISION = 0.001419547235172569
+ MEAN_RECALL = 0.9828590398107788
+ STD_RECALL = 0.00020391470516528676
+ MEAN_F1_SCORE = 0.9830666506696315
+ STD_F1_SCORE = 0.0008194345542193449
+
+
+####################################################
+# SVMSMOTE DATASET k = 0 case 2
+#####################################################
+# Hyperparmaters 
+###################
+1492, 291, 204, (3, 13), 0.007828843604025217, 0.9553835115816351, 0.024463195647715427, 0.011866222241559189, 0.000989, 0.9978842961855262, (-545.8501285953445, 580.2658616827423), 2.9372369198238458e-05
+
+
+###################
+# Clean Symbolic Expressions 
+###################
+['log2(log2(min(np.tan(np.add(X20, np.cos(np.subtract(X8, X16)))), div(div(np.add(np.cos(np.multiply(np.sin(np.sin(CubeRoot(CubeRoot(log(np.subtract(X18, X35)))))), min(X1, X2))), X21), div(div(log10(np.multiply(X40, np.multiply(np.multiply(X32, div(np.add(max(sqrt(X2), np.tan(X3)), CubeRoot(np.cos(X2))), sqrt(X30))), X21))), np.tan(div(log10(div(X2, X13)), X6))), log2(X3))), log10(np.subtract(max(np.sin(CubeRoot(div(np.tan(log10(np.cos(np.tan(X1)))), log2(X34)))), min(np.subtract(X4, np.sin(X2)), np.multiply(sqrt(np.add(np.add(log10(np.add(200.765, X1)), np.tan(log10(X4))), div(X3, -488.390))), np.add(max(X10, np.add(X36, X26)), X10)))), log(max(np.multiply(X31, X4), np.multiply(X3, X4)))))))))'], 
+['log2(sqrt(np.add(np.tan(np.tan(min(max(np.multiply(div(X37, X35), X11), np.multiply(X40, X29)), X32))), min(np.multiply(div(np.add(np.multiply(np.subtract(np.abs(X3), max(np.add(div(log2(np.subtract(-312.936, np.add(X2, min(X41, X35)))), np.cos(CubeRoot(X2))), CubeRoot(301.021)), np.multiply(CubeRoot(X23), X1))), np.add(np.tan(X36), X41)), X1), X31), np.multiply(np.abs(np.add(div(log2(X1), np.multiply(X33, X28)), np.tan(X33))), X21)), np.add(np.tan(np.tan(div(div(sqrt(X3), np.subtract(np.subtract(np.tan(X1), X1), X4)), np.subtract(X42, X3)))), min(np.multiply(np.subtract(X4, div(log10(log(np.tan(np.add(np.add(np.sin(X1), log(361.828)), np.cos(sqrt(log2(CubeRoot(X0)))))))), sqrt(log(max(X34, np.add(X40, log(np.add(X21, np.add(div(X29, X34), X14))))))))), np.multiply(X21, np.add(np.multiply(X34, X1), X21))), sqrt(max(X25, np.sin(X8)))))))))'], 
+['np.subtract(np.subtract(max(np.multiply(log10(max(X0, np.abs(np.subtract(X4, X21)))), np.add(np.subtract(X34, np.subtract(np.sin(X10), X24)), np.subtract(min(X1, CubeRoot(X38)), np.add(log(np.sin(np.tan(np.sin(log10(max(X25, min(X24, div(np.cos(log10(sqrt(X21))), X23)))))))), np.tan(X42))))), max(X6, X34)), max(log2(np.subtract(np.add(np.tan(log10(np.multiply(X3, X40))), log10(sqrt(np.add(log(CubeRoot(X21)), log10(np.sin(np.cos(sqrt(min(X1, X4))))))))), CubeRoot(np.multiply(np.abs(np.add(log(max(X24, X35)), np.add(np.multiply(X4, X22), X29))), max(np.cos(np.add(X8, CubeRoot(X21))), np.add(np.tan(np.sin(X42)), np.add(X42, np.multiply(X35, X10)))))))), min(np.add(np.add(min(np.add(log2(np.subtract(np.abs(X3), np.add(CubeRoot(X31), np.sin(X2)))), np.cos(log2(X28))), CubeRoot(np.subtract(div(np.cos(np.tan(CubeRoot(X8))), np.tan(X1)), div(X3, X40)))), np.sin(np.subtract(X26, X3))), np.sin(X2)), np.subtract(div(X2, np.tan(X1)), X1)))), log10(max(log(np.tan(np.add(np.tan(np.cos(log2(log(CubeRoot(X39))))), -379.338))), np.abs(log2(np.subtract(div(X34, div(sqrt(X37), X33)), np.multiply(X3, np.multiply(X3, np.add(np.add(X42, X14), np.multiply(log(X3), np.add(log(X34), X4)))))))))))'], 
+['CubeRoot(np.subtract(np.subtract(div(log2(np.subtract(np.tan(np.tan(X24)), np.sin(np.tan(np.tan(sqrt(CubeRoot(np.abs(np.sin(min(min(np.sin(X1), np.subtract(np.multiply(X35, X12), X10)), log10(np.tan(X1)))))))))))), np.subtract(X33, log2(np.subtract(max(np.subtract(log10(max(max(X16, np.add(max(sqrt(np.abs(np.add(log10(X39), np.cos(np.sin(np.cos(X32)))))), np.tan(np.subtract(log(max(CubeRoot(X36), np.cos(np.multiply(np.add(X39, X24), div(X26, X9))))), np.cos(X19)))), X2)), np.abs(X37))), np.sin(np.subtract(X18, X8))), np.cos(min(log10(X4), log2(max(X3, min(X1, X24)))))), X39)))), log2(np.tan(min(np.tan(np.abs(np.cos(np.tan(np.subtract(np.abs(X12), X38))))), np.multiply(np.tan(np.subtract(log10(max(max(np.multiply(X4, log10(np.tan(X32))), np.add(np.subtract(X33, np.subtract(X22, np.subtract(log(X30), np.tan(log2(CubeRoot(X3)))))), X2)), CubeRoot(np.sin(np.cos(X7))))), np.tan(min(log2(X41), np.cos(np.add(X8, X11)))))), np.abs(np.add(log(log10(np.sin(X33))), np.abs(np.subtract(X4, np.abs(X40)))))))))), log2(np.tan(min(np.tan(np.abs(np.cos(np.tan(np.subtract(X38, X37))))), np.multiply(np.tan(np.subtract(log10(max(max(X9, np.add(np.sin(np.add(CubeRoot(X1), div(X5, X15))), X2)), max(CubeRoot(np.sin(np.cos(X27))), X8))), CubeRoot(log2(np.tan(max(X42, X8)))))), np.abs(np.add(X28, np.abs(np.subtract(X4, log10(np.sin(log2(np.sin(np.add(CubeRoot(X1), np.abs(log10(np.subtract(log(X2), CubeRoot(X42)))))))))))))))))))'], 
+['np.add(log(max(np.subtract(np.multiply(CubeRoot(np.multiply(div(296.027, np.add(X31, np.cos(log(sqrt(431.027))))), max(np.tan(X25), X24))), max(X21, div(X32, np.sin(X1)))), div(np.subtract(np.subtract(X20, X21), np.subtract(X22, sqrt(X1))), X30)), log2(np.subtract(div(np.subtract(np.multiply(X3, np.subtract(X10, X3)), np.add(log2(X31), X1)), X26), min(log10(X3), np.subtract(X3, np.add(CubeRoot(563.868), X1))))))), div(np.add(log2(log10(log(np.subtract(min(div(np.add(X8, X33), div(X13, X40)), np.cos(np.cos(np.subtract(X8, X27)))), sqrt(np.multiply(np.cos(min(X36, X37)), np.add(div(np.multiply(X26, X25), X25), np.abs(log(np.abs(sqrt(np.subtract(213.866, np.multiply(-452.752, np.multiply(np.subtract(log2(X34), np.add(X22, CubeRoot(CubeRoot(X33)))), div(np.multiply(X26, X32), X38))))))))))))))), np.sin(np.add(np.subtract(X34, CubeRoot(X42)), X8))), np.sin(sqrt(log2(sqrt(log10(log2(log10(CubeRoot(np.subtract(max(X4, div(log2(np.subtract(np.tan(X2), np.abs(log2(X40)))), div(np.multiply(np.multiply(np.subtract(log2(np.abs(np.multiply(np.multiply(log2(div(np.multiply(X38, X39), div(X20, X0))), np.tan(CubeRoot(np.cos(X24)))), np.abs(X41)))), np.abs(X2)), np.tan(X41)), np.cos(np.add(X25, X32))), X33))), np.tan(X14))))))))))))']
+
+####################
+# Depth and Length 
+####################
+['15', '17', '18', '21', '24']
+['104', '123', '171', '199', '170']
+
+
+####################
+# Scores 
+####################
+MEAN_ACC = 0.983999943437952
+ STD_ACC = 0.0007301618808737698
+ MEAN_ROC_AUC = 0.983993706384889
+ STD_ROC_AUC = 0.0007246870477183309
+ MEAN_PRECISION = 0.9826826955416023
+ STD_PRECISION = 0.0011314447755420565
+ MEAN_RECALL = 0.9855344543707156
+ STD_RECALL = 0.0003691467173056462
+ MEAN_F1_SCORE = 0.9840990210114581
+ STD_F1_SCORE = 0.0007532553503680761
+
